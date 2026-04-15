@@ -24,7 +24,7 @@ Implementar un Message Broker (ej. RabbitMQ o Redis Streams) entre el servicio d
 - **Latencia:** Introducimos un retraso mínimo (milisegundos) entre la recepción y la visualización final.
 
 graph LR
-subgraph Vehículos
+subgraph Vehiculos ["Vehículos"]
 U1[Unidad 1]
 U2[Unidad 2]
 U3[Unidad N]
