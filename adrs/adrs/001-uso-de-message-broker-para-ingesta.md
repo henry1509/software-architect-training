@@ -23,12 +23,14 @@ Implementar un Message Broker (ej. RabbitMQ o Redis Streams) entre el servicio d
 - **Complejidad:** Añadimos un componente más a la infraestructura que debe ser monitoreado.
 - **Latencia:** Introducimos un retraso mínimo (milisegundos) entre la recepción y la visualización final.
 
+## Arquitectura de Flota
+```mermaid
 graph LR
-subgraph Vehiculos ["Vehículos"]
-U1[Unidad 1]
-U2[Unidad 2]
-U3[Unidad N]
-end
+    subgraph V1 ["Vehículos"]
+        U1[Unidad 1]
+        U2[Unidad 2]
+        U3[Unidad N]
+    end
 
     Gateway[Gateway Service]
     Queue((Cola de Mensajes))
