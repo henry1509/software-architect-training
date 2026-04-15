@@ -16,3 +16,9 @@ Como arquitecto, debo elegir qué es lo más importante. Ordena estos 3 del 1 al
 
 - Protocolo de comunicación (¿UDP, TCP, HTTP?).
 - Base de datos actual (¿Soportará 1,000 inserts por segundo?).
+
+## 4. Estrategia de Persistencia
+
+- **Decisión Táctica:** Implementación de persistencia por lotes (Batch Insert).
+- **Atributo Priorizado:** Rendimiento de la Base de Datos (Throughput).
+- **Lógica:** El Worker acumulará mensajes del Broker y ejecutará un INSERT masivo cada 200 registros o cada 2 segundos. Esto reduce la carga de IOPS en SQL Server y evita la fragmentación excesiva de índices.
