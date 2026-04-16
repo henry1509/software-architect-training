@@ -26,3 +26,24 @@ Mañana analizaremos cómo evitar que el sistema sea una "caja negra". Si un tra
 
 - **Tu tarea de lectura previa:**
   Busca qué es el Stack ELK (Elasticsearch, Logstash, Kibana) o Grafana Loki. No profundices en cómo instalarlos, sino en para qué sirven en un ecosistema de microservicios o sistemas distribuidos.
+
+## El stack ELK (Elasticsearch, Logstash, Kibana) es un conjunto de tres herramientas de código abierto de Elastic que se combinan para gestionar, analizar y visualizar grandes volúmenes de datos en tiempo real, comúnmente utilizados para centralizar registros (logs) y monitorear infraestructuras o aplicaciones.
+
+- **Componentes Principales:**
+  Elasticsearch: Motor de búsqueda y análisis distribuido que almacena e indexa los datos de forma rápida.
+  Logstash: Pipeline de procesamiento de datos que ingiere, transforma y envía datos desde diversas fuentes hacia Elasticsearch.
+  Kibana: Interfaz de usuario y herramienta de visualización que permite crear gráficos y tableros interactivos para analizar los datos almacenados.
+
+- **Beneficios Principales:**
+  Centralización: Agrupa logs de múltiples servidores y aplicaciones en un solo lugar.
+  Análisis en Tiempo Real: Permite detectar problemas y anomalías rápidamente.
+  Visualización: Facilita la creación de paneles personalizados.
+
+## ¿Cómo funciona?
+
+**Ingesta (Logstash/Beats):** Los logs se recopilan de diferentes fuentes.
+**Procesamiento (Logstash):** Los datos se filtran y estructuran.
+**Almacenamiento (Elasticsearch):** Los datos se indexan y almacenan.
+**Visualización (Kibana):** Los usuarios interactúan con los datos a través de dashboards.
+
+**Nota:** Actualmente, el stack suele incluir Beats (agentes ligeros de envío de datos), llamándose frecuentemente Elastic Stack.
